@@ -1,6 +1,5 @@
 import discord
 import asyncio
-import mysql.connector
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix='&')
