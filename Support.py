@@ -9,7 +9,7 @@ async def on_ready():
     print(bot.user.name)
     print(bot.user.id)
     print('-----')
-    await bot.change_presence(game=discord.Game(name='Support |DM me'),status=discord.Status.dnd)
+    await bot.change_presence(game=discord.Game(name='Support |DM me'),status=discord.Status.idle)
 @bot.event
 async def on_message(message):
             msg = getattr(message.server, 'id', None)
