@@ -4,6 +4,7 @@ import os
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix='&')
+bot.remove_command('help')
 @bot.event
 async def on_ready():
     print('logged in as')
