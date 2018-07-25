@@ -1,5 +1,6 @@
 import discord
 import asyncio
+import os
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix='&')
@@ -39,4 +40,4 @@ async def send(ctx,user:discord.Member):
         emb3.add_field(name="**Solution**", value=s2)
         await bot.send_message(user,embed=emb3)
 
-bot.run("NDcxMDEyMjM4Njk4ODcyODMy.DjjUiw.BNOzts5B4GvGBTmXCwpqBy2kMAU")
+bot.run(os.environ["TOKEN"])
